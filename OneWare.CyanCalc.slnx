@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/dependencies/">
+    <Project Path=".deps/CyanCalc/bindings/dotnet/CyanCalc.csproj" />
+    <Project Path=".deps/OneWare/src/OneWare.Essentials/OneWare.Essentials.csproj" />
+    <Project Path=".deps/OneWare/src/OneWare.ProjectSystem/OneWare.ProjectSystem.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Workbook/CyanCalc.OneWare.Workbook.csproj" />
+    <Project Path="src/OneWare.CyanCalc/OneWare.CyanCalc.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OneWare.CyanCalc.Checks/OneWare.CyanCalc.Checks.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/SampleWorkbook/SampleWorkbook.csproj" />
+  </Folder>
+</Solution>

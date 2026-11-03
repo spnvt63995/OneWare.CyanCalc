@@ -1,0 +1,11 @@
+OneWare.CyanCalc — CyanCalc for OneWare
+Copyright 2026 OneWare.CyanCalc contributors
+
+Independent, unofficial integration of CyanCalc/IronCalc with OneWare Studio.
+Not endorsed by ONE WARE or IronCalc.
+
+Portions of the integration follow OneWare Studio's Apache-2.0-licensed plugin,
+project and shell implementations: https://github.com/one-ware/OneWare
+
+Linked CyanCalc UI, IronCalc engine, icons and fonts retain their respective
+licenses and notices. See docs/ThirdParty.md and the distributed licenses folder.

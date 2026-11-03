@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+.local/
+.idea/
+*.DotSettings.user
+.DS_Store
+artifacts/
+.deps/
+.run/
+**/__pycache__/

@@ -1,0 +1,41 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:plugin="using:OneWare.CyanCalc">
+  <!-- dialog-button belongs to CyanCalc. Host primary styles otherwise override
+       the disabled setters inside the workbook's DialogButton control theme. -->
+  <Style Selector="Button.dialog-button:disabled">
+    <Setter Property="Background" Value="{DynamicResource ThemeControlMidBrush}" />
+    <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundLowBrush}" />
+    <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderLowBrush}" />
+  </Style>
+  <Style Selector="Button.dialog-button:disabled /template/ ContentPresenter#PART_ContentPresenter">
+    <Setter Property="Background" Value="{DynamicResource ThemeControlMidBrush}" />
+    <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundLowBrush}" />
+    <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderLowBrush}" />
+    <Setter Property="Opacity" Value="1" />
+  </Style>
+
+  <!-- Consume the existing error labels, including async name validation.
+       Do not add another validator or alter Apply/Save command availability. -->
+  <Style Selector="Border.workbook-drawer TextBox#NamedRangeName">
+    <Setter Property="plugin:WorkbookInputStyles.ErrorSource" Value="Name" />
+  </Style>
+  <Style Selector="Border.workbook-drawer TextBox#NamedRangeFormula">
+    <Setter Property="plugin:WorkbookInputStyles.ErrorSource" Value="Reference" />
+  </Style>
+  <Style Selector="Border.workbook-drawer TextBox#ConditionalValue">
+    <Setter Property="plugin:WorkbookInputStyles.ErrorSource" Value="ConditionalFormula" />
+  </Style>
+
+  <!-- LinkEditorWindow already supplies invalid. Match both the host SimpleTheme
+       border and the shared workbook template, including focus/hover states. -->
+  <Style Selector="TextBox.dialog-input.invalid, Border.workbook-drawer TextBox.invalid">
+    <Setter Property="BorderBrush" Value="{DynamicResource ErrorBrush}" />
+  </Style>
+  <Style Selector="TextBox.dialog-input.invalid /template/ Border#border,
+                   Border.workbook-drawer TextBox.invalid /template/ Border#border,
+                   TextBox.dialog-input.invalid /template/ Border#PART_BorderElement,
+                   Border.workbook-drawer TextBox.invalid /template/ Border#PART_BorderElement">
+    <Setter Property="BorderBrush" Value="{DynamicResource ErrorBrush}" />
+  </Style>
+</Styles>

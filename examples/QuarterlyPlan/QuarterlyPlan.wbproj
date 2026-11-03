@@ -1,0 +1,10 @@
+{
+  "startupWorkbooks": [
+    "Budget.ic"
+  ],
+  "include": [
+    "*.ic",
+    "*.xlsx"
+  ],
+  "exclude": []
+}

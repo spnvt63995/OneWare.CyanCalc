@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Keep the resource identity used by the shared UI's avares:// URIs.
+         This is a plugin-only build; do not load the standalone UI alongside it. -->
+    <AssemblyName>CyanCalc.Avalonia</AssemblyName>
+    <RootNamespace>CyanCalc</RootNamespace>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.3.22" />
+    <ProjectReference Include="$(CyanCalcRoot)/bindings/dotnet/CyanCalc.csproj" />
+    <Compile Include="$(CyanCalcRoot)/ui/avalonia/**/*.cs" Exclude="$(CyanCalcRoot)/ui/avalonia/bin/**;$(CyanCalcRoot)/ui/avalonia/obj/**" Link="Shared/%(RecursiveDir)%(Filename)%(Extension)" />
+    <AvaloniaResource Include="$(CyanCalcRoot)/ui/avalonia/**/*.axaml" Exclude="$(CyanCalcRoot)/ui/avalonia/bin/**;$(CyanCalcRoot)/ui/avalonia/obj/**" Link="%(RecursiveDir)%(Filename)%(Extension)" />
+    <AvaloniaResource Include="$(CyanCalcRoot)/ui/avalonia/Resources/Fonts/*.ttf" Link="Resources/Fonts/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="$(CyanCalcRoot)/ui/avalonia/Resources/*.json" Link="Resources/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="$(CyanCalcRoot)/webapp/app.ironcalc.com/frontend/src/locale/*.json" Link="Shell/Locales/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="$(CyanCalcRoot)/webapp/IronCalc/src/locale/*.json" Link="Workbook/Locales/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="$(CyanCalcRoot)/ui/avalonia/Localization/Locales/*.json" Link="Localization/Locales/%(Filename)%(Extension)" />
+    <AvaloniaResource Include="$(CyanCalcRoot)/webapp/app.ironcalc.com/frontend/public/templates/*.png" Link="Shell/Templates/%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

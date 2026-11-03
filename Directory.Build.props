@@ -1,0 +1,14 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory).local/Dependencies.props" Condition="Exists('$(MSBuildThisFileDirectory).local/Dependencies.props')" />
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>0.1.0-alpha</Version>
+    <Authors>OneWare.CyanCalc contributors</Authors>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/spnvt63995/OneWare.CyanCalc</RepositoryUrl>
+    <OneWareRoot Condition="'$(OneWareRoot)' == ''">$(MSBuildThisFileDirectory).deps/OneWare</OneWareRoot>
+    <CyanCalcRoot Condition="'$(CyanCalcRoot)' == ''">$(MSBuildThisFileDirectory).deps/CyanCalc</CyanCalcRoot>
+  </PropertyGroup>
+</Project>

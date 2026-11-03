@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "CyanCalc": {
+      "repository": "https://github.com/spnvt63995/CyanCalc.git",
+      "commit": "76a3530c60294fc6446218c033eb32a7e1330137"
+    },
+    "OneWare": {
+      "repository": "https://github.com/one-ware/OneWare.git",
+      "commit": "4c1b510fa4c2410cc462a2bff549b1d2b5590f5a",
+      "version": "1.0.45"
+    }
+  }
+}

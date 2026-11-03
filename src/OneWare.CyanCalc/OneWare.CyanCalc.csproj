@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Workbook/CyanCalc.OneWare.Workbook.csproj" />
+    <ProjectReference Include="$(OneWareRoot)/src/OneWare.Essentials/OneWare.Essentials.csproj" Private="false" ExcludeAssets="runtime;native" />
+    <ProjectReference Include="$(OneWareRoot)/src/OneWare.ProjectSystem/OneWare.ProjectSystem.csproj" Private="false" ExcludeAssets="runtime;native" />
+    <None Include="compatibility.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2 @@
+OneWare.Essentials : 1.0.45
+OneWare.ProjectSystem : 1.0.45

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <!-- The controlled host replaces native file dialogs through Avalonia's service locator. -->
+    <AvaloniaAccessUnstablePrivateApis>true</AvaloniaAccessUnstablePrivateApis>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/OneWare.CyanCalc/OneWare.CyanCalc.csproj" />
+    <ProjectReference Include="$(OneWareRoot)/src/OneWare.Essentials/OneWare.Essentials.csproj" />
+    <ProjectReference Include="$(OneWareRoot)/src/OneWare.ProjectSystem/OneWare.ProjectSystem.csproj" />
+    <PackageReference Include="Avalonia.Headless" Version="11.3.22" />
+    <PackageReference Include="Avalonia.Skia" Version="11.3.22" />
+    <PackageReference Include="Avalonia.Themes.Simple" Version="11.3.22" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,24 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!-- Lucide Table2, used by IronCalc's workbook list. Shapes, 24px viewBox,
+       and stroke match CyanCalc's Resources/workbook-ui-assets.json.
+       The packaged Lucide ISC/Feather MIT notices also cover this resource. -->
+  <DrawingImage x:Key="CyanCalc.WorkbookFileIcon">
+    <DrawingGroup>
+      <GeometryDrawing Brush="Transparent" Geometry="M0 0H24V24H0Z" />
+      <GeometryDrawing>
+        <GeometryDrawing.Pen>
+          <Pen Brush="{DynamicResource ThemeAccentBrush}" Thickness="2"
+               LineCap="Round" LineJoin="Round" />
+        </GeometryDrawing.Pen>
+        <GeometryDrawing.Geometry>
+          <GeometryGroup>
+            <StreamGeometry>M3 9h18</StreamGeometry>
+            <StreamGeometry>M9 3v18</StreamGeometry>
+            <RectangleGeometry Rect="3,3,18,18" RadiusX="2" RadiusY="2" />
+          </GeometryGroup>
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+  </DrawingImage>
+</ResourceDictionary>
