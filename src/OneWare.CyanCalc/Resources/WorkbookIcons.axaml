@@ -1,14 +1,26 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ResourceDictionary.ThemeDictionaries>
+    <ResourceDictionary x:Key="Default">
+      <SolidColorBrush x:Key="CyanCalc.WorkbookFileIconBrush"
+                       Color="{DynamicResource HighlightForegroundColor}" />
+    </ResourceDictionary>
+    <ResourceDictionary x:Key="Light">
+      <SolidColorBrush x:Key="CyanCalc.WorkbookFileIconBrush"
+                       Color="{DynamicResource ThemeForegroundColor}" />
+    </ResourceDictionary>
+  </ResourceDictionary.ThemeDictionaries>
+
   <!-- Lucide Table2, used by IronCalc's workbook list. Shapes, 24px viewBox,
        and stroke match CyanCalc's Resources/workbook-ui-assets.json.
-       The packaged Lucide ISC/Feather MIT notices also cover this resource. -->
+       The packaged Lucide ISC/Feather MIT notices also cover this resource.
+       Neutral strokes stay visible on both normal surfaces and accent-filled tabs. -->
   <DrawingImage x:Key="CyanCalc.WorkbookFileIcon">
     <DrawingGroup>
       <GeometryDrawing Brush="Transparent" Geometry="M0 0H24V24H0Z" />
       <GeometryDrawing>
         <GeometryDrawing.Pen>
-          <Pen Brush="{DynamicResource ThemeAccentBrush}" Thickness="2"
+          <Pen Brush="{DynamicResource CyanCalc.WorkbookFileIconBrush}" Thickness="2"
                LineCap="Round" LineJoin="Round" />
         </GeometryDrawing.Pen>
         <GeometryDrawing.Geometry>
