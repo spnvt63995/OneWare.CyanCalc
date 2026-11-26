@@ -10,5 +10,8 @@
     <RepositoryUrl>https://github.com/spnvt63995/OneWare.CyanCalc</RepositoryUrl>
     <OneWareRoot Condition="'$(OneWareRoot)' == ''">$(MSBuildThisFileDirectory).deps/OneWare</OneWareRoot>
     <CyanCalcRoot Condition="'$(CyanCalcRoot)' == ''">$(MSBuildThisFileDirectory).deps/CyanCalc</CyanCalcRoot>
+    <CyanGraphRoot Condition="'$(CyanGraphRoot)' == ''">$(MSBuildThisFileDirectory).deps/CyanGraph</CyanGraphRoot>
+    <CyanTableRoot Condition="'$(CyanTableRoot)' == ''">$(CyanGraphRoot)</CyanTableRoot>
+    <ShouldUnsetParentConfigurationAndPlatform Condition="$([System.String]::Copy('$(MSBuildProjectName)').Contains('CyanGraph'))">false</ShouldUnsetParentConfigurationAndPlatform>
   </PropertyGroup>
 </Project>

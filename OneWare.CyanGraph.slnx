@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path=".deps/CyanGraph/libraries/CyanGraph.Neo4j/CyanGraph.Neo4j.csproj" />
+  <Project Path=".deps/OneWare/src/OneWare.Essentials/OneWare.Essentials.csproj" />
+  <Project Path="src/OneWare.CyanGraph/OneWare.CyanGraph.csproj" />
+  <Project Path="src/Graph/View/CyanGraph.OneWare.View.csproj" />
+  <Project Path="src/Table/Grid/CyanTable.OneWare.Grid.csproj" />
+  <Project Path="tests/OneWare.CyanGraph.Checks/OneWare.CyanGraph.Checks.csproj" />
+</Solution>

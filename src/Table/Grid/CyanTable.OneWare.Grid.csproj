@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><AssemblyName>CyanCalc.Grid</AssemblyName><RootNamespace>CyanCalc.Tabular</RootNamespace></PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.3.22" />
+    <Compile Include="$(CyanTableRoot)/ui/grid/**/*.cs" Exclude="$(CyanTableRoot)/ui/grid/bin/**;$(CyanTableRoot)/ui/grid/obj/**" Link="Shared/%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

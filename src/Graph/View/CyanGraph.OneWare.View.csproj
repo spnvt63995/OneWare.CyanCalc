@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><AssemblyName>CyanGraph.Avalonia</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../Table/Grid/CyanTable.OneWare.Grid.csproj" />
+    <ProjectReference Include="$(CyanGraphRoot)/libraries/CyanGraph.Neo4j/CyanGraph.Neo4j.csproj" />
+    <Compile Include="$(CyanGraphRoot)/ui/cyangraph/*.cs" Link="Shared/%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

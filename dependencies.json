@@ -9,6 +9,10 @@
       "repository": "https://github.com/one-ware/OneWare.git",
       "commit": "4c1b510fa4c2410cc462a2bff549b1d2b5590f5a",
       "version": "1.0.45"
+    },
+    "CyanGraph": {
+      "repository": "https://github.com/spnvt63995/CyanCalc.git",
+      "commit": "131ee407bda5f3357dbd9d65e58f17e884845106"
     }
   }
 }

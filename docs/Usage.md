@@ -1,5 +1,7 @@
 # Workbook projects and commands
 
+With the CyanGraph module installed, choose **View → CyanGraph** to open a graph document beside the workbook. [Graph queries and linked results](CyanGraph.md).
+
 ## Workbook projects
 
 A `.wbproj` describes a folder of workbooks. Like IronCalc's workbook list, each

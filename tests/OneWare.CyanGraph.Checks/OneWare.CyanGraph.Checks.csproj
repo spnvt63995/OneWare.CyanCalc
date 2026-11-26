@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><IsPackable>false</IsPackable></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../HostChecks/Service.cs" Link="Service.cs" />
+    <ProjectReference Include="../../src/OneWare.CyanGraph/OneWare.CyanGraph.csproj" />
+    <ProjectReference Include="$(OneWareRoot)/src/OneWare.Essentials/OneWare.Essentials.csproj" />
+    <PackageReference Include="Avalonia.Headless" Version="11.3.22" />
+    <PackageReference Include="Avalonia.Themes.Simple" Version="11.3.22" />
+  </ItemGroup>
+</Project>

@@ -25,6 +25,8 @@ or workbook-editing chat tools.
 
 ## What it adds
 
+The optional CyanGraph module opens a Neo4j graph document next to workbook tabs. [Build the module and follow a Movies query](docs/CyanGraph.md).
+
 - `.ic` and `.xlsx` workbook documents with multiple worksheets.
 - `.wbproj` projects containing several workbook files, using OneWare's Explorer and document tabs.
 - A contextual spreadsheet toolbar, a Workbook menu, and host Undo/Redo integration.
